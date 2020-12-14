@@ -3,11 +3,11 @@
   margin: 0 auto;
   @include pad {
     max-width: $container-md;
-    padding: 0 39px;
+    margin: 0 39px;
   }
   @include mobile {
     max-width: $container-sm;
-    padding: 0 15px;
+    margin: 0 15px;
   }
 }
 
