@@ -2,10 +2,10 @@
   background-color: $red;
   padding-top: 16px;
   padding-bottom: 28px;
-  @media screen and (max-width: 1024px) {
+  @include pad {
     padding-bottom: 40px;
   }
-  @media screen and (max-width: 767px) {
+  @include mobile {
     padding-bottom: 25px;
   }
   .footer-upper-block {
@@ -25,17 +25,17 @@
       &:hover {
         text-decoration: underline;
       }
-      @media screen and (max-width: 1024px) {
+      @include pad {
         padding: 24px 20px;
       }
     }
-    @media screen and (max-width: 767px) {
+    @include mobile {
       display: none;
     }
   }
   .contact {
     margin-bottom: 24px;
-    @media screen and (max-width: 767px) {
+    @include mobile {
       margin-top: 7px;
     }
     li {
@@ -59,7 +59,7 @@
       a:hover {
         text-decoration: underline;
       }
-      @media screen and (max-width: 1024px) {
+      @include pad {
         margin-bottom: 11px;
         .contact-icon {
           width: 32px;
@@ -74,7 +74,7 @@
           font-weight: 300;
         }
       }
-      @media screen and (max-width: 767px) {
+      @include mobile {
         margin-bottom: 7px;
         .contact-icon {
           width: 20px;
@@ -100,35 +100,35 @@
         margin-right: 0;
       }
     }
-    @media screen and (max-width: 1024px) {
+    @include pad {
       margin-top: 24px;
       li {
         margin-right: 24px;
         width: 24px;
       }
     }
-    @media screen and (max-width: 767px) {
+    @include mobile {
       margin-top: 8px;
     }
   }
   hr {
     margin-top: 0;
     margin-bottom: 24px;
-    @media screen and (max-width: 767px) {
+    @include mobile {
       margin-bottom: 18px;
     }
   }
   .footer-lower-block {
     display: flex;
-    @media screen and (max-width: 767px) {
+    @include mobile {
       flex-direction: row-reverse;
     }
     .logo {
       margin-right: 38px;
-      @media screen and (max-width: 1024px) {
+      @include pad {
         display: none;
       }
-      @media screen and (max-width: 767px) {
+      @include mobile {
         display: block;
         width: 46px;
         margin-right: 0;
@@ -143,7 +143,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @media screen and (max-width: 767px) {
+      @include mobile {
         display: block;
         p {
           font-size: 14px;
@@ -154,12 +154,12 @@
     }
     .terms {
       display: flex;
-      @media screen and (max-width: 767px) {
+      @include mobile {
         display: block;
       }
       li:first-child {
         margin-right: 62px;
-        @media screen and (max-width: 1024px) {
+        @include pad {
           margin-right: 24px;
         }
       }
@@ -170,7 +170,7 @@
         &:hover {
           text-decoration: underline;
         }
-        @media screen and (max-width: 767px) {
+        @include mobile {
           margin-bottom: 8px;
         }
       }

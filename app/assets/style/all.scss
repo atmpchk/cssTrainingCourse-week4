@@ -1,9 +1,28 @@
+// @import "variable";// 變數
+// @import "reset";  // reset.css
+// @import "base"; // 全站設定
+// @import "util"; // 工具類 class，.mb-1、.pr-3
+
+// // layout 共同框架,第一層
+// @import "layout/header";
+// @import "layout/footer";
+// @import "layout/menu";
+// @import "layout/aisde";
+
+// // 頁面設計
+// @import "pages/index";
+// @import "pages/cart";
+
 @import "variables";
 @import "reset";
-@import "fonts";
-@import "commons";
-@import "header";
-@import "footer";
+@import "mixins";
+@import "base";
+@import "typography";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
 
 // pages
 @import "faq";
+@import "index";

@@ -1,0 +1,71 @@
+@mixin rwd-custom($property, $pc, $pad:null, $mobile:null) {
+  #{$property}: $pc;
+
+  @include pad {
+    #{$property}: $pad;
+  }
+
+  @include mobile {
+    #{$property}: $mobile;
+  }
+}
+
+@mixin rwd-font-size($pc, $pad:null, $mobile:null) {
+  font-size: $pc;
+
+  @include pad {
+    font-size: $pad;
+  }
+
+  @include mobile {
+    font-size: $mobile;
+  }
+}
+
+@mixin rwd-margin($pc, $pad:null, $mobile:null) {
+  margin: $pc;
+
+  @include pad {
+    margin: $pad;
+  }
+
+  @include mobile {
+    margin: $mobile;
+  }
+}
+
+@mixin rwd-margin-dir($direction, $pc, $pad:null, $mobile:null) {
+  margin-#{$direction}: $pc;
+
+  @include pad {
+    margin-#{$direction}: $pad;
+  }
+
+  @include mobile {
+    margin-#{$direction}: $mobile;
+  }
+}
+
+@mixin rwd-padding($pc, $pad:null, $mobile:null) {
+  padding: $pc;
+
+  @include pad {
+    padding: $pad;
+  }
+
+  @include mobile {
+    padding: $mobile;
+  }
+}
+
+@mixin rwd-padding-dir($direction, $pc, $pad:null, $mobile:null) {
+  padding-#{$direction}: $pc;
+
+  @include pad {
+    padding-#{$direction}: $pad;
+  }
+
+  @include mobile {
+    padding-#{$direction}: $mobile;
+  }
+}

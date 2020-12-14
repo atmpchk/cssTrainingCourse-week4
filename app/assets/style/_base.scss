@@ -1,11 +1,11 @@
 .container {
   max-width: $container;
   margin: 0 auto;
-  @media screen and (max-width: 1024px) {
+  @include pad {
     max-width: $container-md;
     padding: 0 39px;
   }
-  @media screen and (max-width: 767px) {
+  @include mobile {
     max-width: $container-sm;
     padding: 0 15px;
   }
@@ -15,6 +15,12 @@
   display: flex;
 }
 
-.bold-ch {
-  font-weight: 700;
+html {
+  font-size: $base-font-size * 0.625;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $font-family-base;
 }
