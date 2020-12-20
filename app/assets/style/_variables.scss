@@ -1,12 +1,36 @@
 // color
+$white: #FFFFFF;
+$gray-300: #DEE2E6;
+$gray-600: #707070;
+$black: #000000;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "white":      $white,
+    "gray-light": $gray-300,
+    "gray":       $gray-600,
+    // "gray-dark":  $gray-800,
+    "black": $black
+  ),
+  $colors
+);
+
 $primary: #AA0601;
 $secondary: #650300;
 $dark: #212529;
-
 $light: #FAF2F2;
-$white: #FFFFFF;
-$black: #000000;
-$gray: #707070;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "light":      $light,
+    "dark":       $dark,
+  ),
+  $theme-colors
+);
 
 // container
 $container: 1000px;
