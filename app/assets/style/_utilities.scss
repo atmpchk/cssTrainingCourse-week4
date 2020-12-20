@@ -2,3 +2,10 @@
 .d-flex {
   display: flex;
 }
+
+// spacing
+$spacing-base: 0.4rem;
+@function spacing($i) {
+    @return $spacing-base * $i;
+}
+// Example: margin: spacing(10); -> 40px

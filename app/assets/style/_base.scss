@@ -12,6 +12,7 @@
 }
 
 html {
+  // define 1rem, if $base-font-size is 16px, then 1rem is 10px
   font-size: $base-font-size * 0.625;
 }
 

@@ -1,8 +1,12 @@
 // color
 $primary: #AA0601;
 $secondary: #650300;
+$dark: #212529;
+
 $light: #FAF2F2;
 $white: #FFFFFF;
+$black: #000000;
+$gray: #707070;
 
 // container
 $container: 1000px;
@@ -13,10 +17,3 @@ $container-sm: 737px;
 $font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Roboto', 'Noto Sans' !important;
 $base-font-size: 16px;
 $base-line-height: 1.5;
-
-// spacing
-$spacing-base: 4px;
-@function spacing($i) {
-    @return $spacing-base * $i;
-}
-// Example: margin: spacing(10); -> 40px
