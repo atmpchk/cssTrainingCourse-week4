@@ -1,8 +1,8 @@
 // color
-$white: #FFFFFF;
-$gray-300: #DEE2E6;
-$gray-600: #707070;
-$black: #000000;
+$white: #FFFFFF !default;
+$gray-300: #DEE2E6 !default;
+$gray-600: #707070 !default;
+$black: #000000 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -16,10 +16,10 @@ $colors: map-merge(
   $colors
 );
 
-$primary: #AA0601;
-$secondary: #650300;
-$dark: #212529;
-$light: #FAF2F2;
+$primary: #AA0601 !default;
+$secondary: #650300 !default;
+$dark: #212529 !default;
+$light: #FAF2F2 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -33,9 +33,9 @@ $theme-colors: map-merge(
 );
 
 // container
-$container: 1000px;
-$container-md: 946px;
-$container-sm: 737px;
+$container: 1000px !default;
+$container-md: 946px !default;
+$container-sm: 737px !default;
 
 // font
 $font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Roboto', 'Noto Sans' !important;
@@ -44,3 +44,8 @@ $base-line-height: 1.5;
 
 // spacer
 $spacer: 0.4rem;
+
+// Utilities
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
