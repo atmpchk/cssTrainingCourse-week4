@@ -1,5 +1,4 @@
 // Example: margin: spacing(10); -> 40px
-$spacer: 0.4rem;
 @function spacing($i) {
   @return $spacer * $i;
 }
