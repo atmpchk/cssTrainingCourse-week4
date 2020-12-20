@@ -9,3 +9,14 @@
     background-color: $value;
   }
 }
+
+.bg-index-primary {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+  @include mobile {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true")
+  }
+}
+
+.bg-index-secondary {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png");
+}
