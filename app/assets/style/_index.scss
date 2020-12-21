@@ -331,6 +331,10 @@
     input, textarea {
       border: 1px solid $black;
       background-color: $light;
+      &:focus {
+        outline: none;
+        border: 1px solid $primary;
+      }
     }
   }
   .submit-btn {
