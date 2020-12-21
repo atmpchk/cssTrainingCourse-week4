@@ -1,4 +1,0 @@
-// Example: margin: spacing(10); -> 40px
-@function spacing($i) {
-  @return $spacer * $i;
-}
