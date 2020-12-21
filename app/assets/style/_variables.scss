@@ -33,17 +33,17 @@ $theme-colors: map-merge(
 );
 
 // container
-$container: 1000px !default;
-$container-md: 946px !default;
-$container-sm: 737px !default;
+$container: 1110px !default;
+$container-md: 944px !default;
+$container-sm: 735px !default;
 
 // Grid breakpoints
 $grid-breakpoints: (
-  // xs: 0,
-  sm: 576px,
-  md: 768px,
+  xl: 1200px,
   lg: 1024px,
-  // xl: 1200px
+  md: 768px,
+  // sm: 576px,
+  // xs: 0
 ) !default;
 
 // font

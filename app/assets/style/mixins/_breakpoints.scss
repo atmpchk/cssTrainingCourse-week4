@@ -27,8 +27,10 @@
 }
 
 @function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
-  $next: breakpoint-next($name, $breakpoints);
-  @return if($next, breakpoint-min($next, $breakpoints) - .02, null);
+  // $next: breakpoint-next($name, $breakpoints);
+  // @return if($next and $n != null, breakpoint-min($next, $breakpoints) - .02, null);
+  // @debug "next: #{$next}";
+  @return if($name == xl, null, breakpoint-min($name, $breakpoints) - .02);
 }
 
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
@@ -37,5 +39,5 @@
 }
 
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
-  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+  @return if(breakpoint-max($name, $breakpoints) == null, "", "-#{$name}");
 }
