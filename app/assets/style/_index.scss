@@ -157,6 +157,9 @@
     color: $white;
     width: 350rem;
     margin: 0 auto;
+    &:hover {
+      background: lighten($primary, 7.5%);
+    }
   }
 }
 
