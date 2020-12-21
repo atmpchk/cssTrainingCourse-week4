@@ -1259,6 +1259,9 @@ body {
   .form-control input, .form-control textarea {
     border: 1px solid #000000;
     background-color: #FAF2F2; }
+    .form-control input:focus, .form-control textarea:focus {
+      outline: none;
+      border: 1px solid #AA0601; }
 
 .form .submit-btn {
   display: block;
