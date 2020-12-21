@@ -78,11 +78,174 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
   font-size: 72rem;
+  line-height: 108rem;
 
   li {
     width: 540rem;
-    height: 472rem;
+  }
+
+  .mask {
+    position: relative;
+    span {
+      position: absolute;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.customer-recommended {
+  .container {
+    padding-bottom: 64rem;
+  }
+}
+
+.card {
+  border: 1px solid $gray-300;
+  border-radius: 3px;
+  .card-content {
+    padding: 16rem;
+    h4 {
+      font-size: 14rem;
+      line-height: 21rem;
+      margin-bottom: 8rem;
+    }
+    p {
+      font-size: 16rem;
+      line-height: 24rem;
+      margin-bottom: 10rem;
+    }
+    small {
+      font-size: 14rem;
+      line-height: 21rem;
+    }
+  }
+}
+
+.card + .card {
+  margin-left: 30rem;
+}
+
+.narrow-container {
+  max-width: 730rem;
+}
+
+.form {
+  .form-control {
+    margin-bottom: 16rem;
+    label {
+      font-size: 16rem;
+      line-height: 24rem;
+    }
+    input, textarea {
+      border: 1px solid $black;
+      background-color: $light;
+    }
+  }
+  .submit-btn {
+    display: block;
+    padding: 16rem 143rem;
+    background: $primary;
+    color: $white;
+    width: 350rem;
+    margin: 0 auto;
+  }
+}
+
+/* Customize the label (the container) */
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 30rem;
+  margin-bottom: 42rem;
+  cursor: pointer;
+  font-size: 16rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24rem;
+  width: 24rem;
+  background-color: $light;
+  border: 1px solid $black;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox:hover input ~ .checkmark {
+  background-color: $gray-300;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: $primary;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.input-spacing {
+  font-size: 16rem;
+  padding: 14rem 16rem;
+  height: 50rem;
+}
+
+.contact {
+  h2 {
+    margin-bottom: 24rem;
+  }
+  p {
+    font-size: 20rem;
+    line-height: 30rem;
+    margin-bottom: 20rem;
+  }
+
+  textarea {
+    height: 136rem;
   }
 }
