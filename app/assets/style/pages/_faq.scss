@@ -7,7 +7,7 @@
     height: 304px;
     align-items: flex-end;
   }
-  h1 {
+  h2 {
     font-size: 64px;
     line-height: 80px;
     margin-right: 24px;
@@ -17,7 +17,7 @@
     padding: 11px 0;
   }
   @include pad {
-    h1 {
+    h2 {
       font-size: 48px;
       margin-right: 16px;
     }
@@ -30,7 +30,7 @@
     .faq-header {
       height: 143px;
     }
-      h1 {
+    h2 {
       font-size: 28px;
     }
     .question-mark {
@@ -43,7 +43,7 @@
 .faq-content {
   padding-top: 80px;
   padding-bottom: 264px;
-  h2 {
+  h3 {
     font-size: 32px;
     line-height: 63px;
     margin-bottom: 36px;
@@ -76,7 +76,7 @@
   @include mobile {
     padding-top: 24px;
     padding-bottom: 36px;
-    h2 {
+    h3 {
       font-size: 20px;
       margin-bottom: 12px;
     }
