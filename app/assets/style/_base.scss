@@ -1,3 +1,19 @@
+/* project reset */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* project base begins */
 html {
   // define 1rem, if $base-font-size is 16px, then 1rem is 1px
   font-size: $base-font-size * 0.0625;
