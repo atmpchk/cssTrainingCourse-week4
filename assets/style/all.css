@@ -47,9 +47,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* The following */
 /* project reset */
-/* begins */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -62,6 +60,7 @@ img {
   max-width: 100%;
   height: auto; }
 
+/* project base begins */
 html {
   font-size: 1px; }
 
